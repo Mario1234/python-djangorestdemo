@@ -5,9 +5,13 @@ Servicio REST de ejemplo escrito en python con Django y djangorestframework
 instalar Python 2.7.14
 
 instalar pytz, django y djangorestframework, abre la consola de comandos en modo administrador y escribe:
+
 python -m pip install pytz-2018.4.tar.gz
+
 python -m pip install Django-1.11.12.tar.gz
+
 python -m pip install djangorestframework-3.8.2.tar.gz
+
 
 ir al escritorio:
 cd desktop
@@ -46,9 +50,13 @@ saltar las siguientes instrucciones hasta *+*
 	
 *+*
 ir a la carpeta prueba_django:
+
 cd DjangoRest
+
 cd prueba_django
+
 ./manage.py runserver
+
 
 probar servicio rest en el navegador web:
 http://localhost:8000/personas/
