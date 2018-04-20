@@ -13,13 +13,13 @@ ir al escritorio:
 cd desktop
 
 si no quieres desarrollar esta app desde cero
-saltar las siguientes instrucciones hasta *+*
+saltar las siguientes instrucciones hasta -1 *+
 	Crea un dominio django (prueba_django):
-	django-admin.py startproject prueba_django
-
+	django-admin.py startproject prueba_django	
+	*+
 	y una aplicacion web (hola):
-	django-admin.py startapp hola
-	
+	django-admin.py startapp hola	
+	*+
 	dentro de la carpeta recien creada prueba_django ir a subcarpeta prueba_django:	
 	Escribir <'hola.apps.HolaConfig',> en el archivo settings.py
 	Escribir <url(r'', include('hola.mapeador')),> en el archivo urls.py
@@ -42,8 +42,8 @@ saltar las siguientes instrucciones hasta *+*
 	ejecutar comandos de creacion de modelo Django:
 	./manage.py makemigrations hola
 	./manage.py migrate
-*+*
-
+	
+-1
 ir a la carpeta prueba_django:
 cd DjangoRest
 cd prueba_django
