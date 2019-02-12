@@ -37,7 +37,8 @@ saltar las siguientes instrucciones hasta *+*
 	ahi se define la transformacion entre objeto vista((en este caso JSON)) y objeto modelo
 	El proceso de un "SELECT" es el siguiente: objeto Modelo -> objeto Serie -> objeto JSON
 	Un entero(integer) seria asi:
-	serializador = SerializadorEntero(data=datos) -> numero = serializers.IntegerField(read_only=True) 
+	primero la consulta(menores a 2): listaEnteros = Entero.objects.filter(valor__lt2)
+	serializador = SerializadorEntero(listaEnteros, many=False) -> valor = serializers.IntegerField(read_only=True) 
 	-> RespuestaJSON(serializador.data) -> JSONRenderer().render(data)
 	y tambien administra las validaciones
 	copiar pegar views.py
